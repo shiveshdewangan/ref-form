@@ -45,6 +45,7 @@ class App extends Component {
               name='name'
               ref={refs.name}
               onChange={this.handleChange}
+              required = {false}
             />
           </div>
 
@@ -55,6 +56,7 @@ class App extends Component {
               name='bday'
               ref={refs.birth_date}
               onChange={this.handleChange}
+              required
             />
           </div>
 
@@ -90,7 +92,7 @@ class App extends Component {
             >
               <option name='required'>Yes</option>
               <option name='not-required'>No</option>
-              <option name='none' selected></option>
+              <option name='none' defaultValue></option>
             </select>
           </div>
           <div>
